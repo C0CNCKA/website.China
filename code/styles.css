@@ -3,22 +3,30 @@ body{
    margin: 0px; 
 }
 .header{
+    height:0;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background-image: url('./assets/photo1.jpg');
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: sticky;
     animation: fadeIn 1s ease-out;
+    z-index: 1;
+}
+
+.photo1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .menu{
-    margin:0px;
-    padding: 1.7em;
-
+    margin-top:0px;
+    padding: 1.3em;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* background: linear-gradient(175deg,rgba(16, 16, 16, 1) 0%, rgba(255, 255, 255, 0) 90%); мб сойдёт*/
 }
 
 .menu li:nth-child(1){animation-delay: 0.3s;}
@@ -28,7 +36,7 @@ body{
 
     /* Меню */
 .menu li{
-    animation: slideUp 0.8s ease-out;
+    animation: slideUp 0.8s ease-out 0.5s both;
     font-size: 1.3rem;
     font-family: "Bellota";
     display: inline-block;
@@ -116,16 +124,16 @@ nav a:hover {
     animation: slideUp 0.8s ease-out 0.5s both;
 }
 
-                  /* Section1! */
+                  /* section2! */
 
-.Section1_1{
+.section2{
     margin:0px;
     top: 15px;
     position: sticky;
     background: linear-gradient(rgba(4, 4, 221, 0.36));
 }
 
-.Section1{
+.section2_1{
     margin-top: 0px;
     color: rgb(255, 255, 255);
     text-align: center;
