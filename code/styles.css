@@ -1,0 +1,224 @@
+
+body{
+   margin: 0px; 
+}
+.header{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url('./assets/photo1.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s ease-out;
+}
+
+.menu{
+    margin:0px;
+    padding: 1.7em;
+
+}
+
+.menu li:nth-child(1){animation-delay: 0.3s;}
+.menu li:nth-child(2){animation-delay: 0.5s;}
+.menu li:nth-child(3){animation-delay: 0.7s;}
+.menu li:nth-child(4){animation-delay: 1.2s;}
+
+    /* Меню */
+.menu li{
+    animation: slideUp 0.8s ease-out;
+    font-size: 1.3rem;
+    font-family: "Bellota";
+    display: inline-block;
+    margin-inline: 1rem;
+    text-transform: uppercase;
+}
+
+@keyframes fadeInRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+a {
+    color: rgb(255, 255, 255);
+  }
+    /* Начальный текст */
+.Text_h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    margin-top: 9em;
+    font-family: "Bellota";
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+    /* Начальный текст */
+.Text_h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    font-family: "Bellota";
+    font-size: 2rem;
+}
+
+
+    /* Правило @keyframes устанавливает ключевые кадры при анимации элемента */
+
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to {opacity: 1;}
+}
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+  /* Навигация */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    animation: slideUp 0.8s ease-out 0.3s both;
+}
+  
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+  
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.intro {
+    padding-bottom: 15rem;
+    text-align: center;
+    animation: slideUp 0.8s ease-out 0.5s both;
+}
+
+                  /* Section1! */
+
+.Section1_1{
+    margin:0px;
+    top: 15px;
+    position: sticky;
+    background: linear-gradient(rgba(4, 4, 221, 0.36));
+}
+
+.Section1{
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    font-family: "Bellota";
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.Text{
+    color: rgb(255, 255, 255);
+    text-align: right;
+    position: relative;
+    margin-top: 5px;
+    font-family: "Bellota";
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    margin-right: 20px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    animation: slideUp 0.8s ease-out 0.5s both;
+}
+
+            /* Карточки */
+
+.card {
+
+    width: 300px;
+    height: 350px;
+    background: rgba(211, 211, 211, 0.199);
+    position: absolute;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+    padding-top: 5px;
+    border-radius: 1rem;
+}
+  
+#c1 {
+    background-color: black;
+}
+  
+#c2 {
+    background-color: blue;
+}
+  
+#c3 {
+    background-color: red;
+}
+  
+#c4 {
+    background-color: green;
+}
+  
+.main:hover #c1 {
+    transform: translateX(-100px) rotate(-40deg);
+}
+  
+.main:hover #c2 {
+    transform: translateX(-50px) rotate(-30deg);
+}
+  
+.main:hover #c3 {
+    transform: translateX(0) rotate(-20deg);
+}
+  
+.main:hover #c4 {
+    transform: translateX(50px) rotate(-10deg);
+}
+  
+#c1:hover {
+    transform: translateX(-150px) rotate(0deg) !important;
+}
+  
+#c2:hover {
+    transform: translateX(-100px) rotate(0deg) !important;
+}
+  
+#c3:hover {
+    transform: translateX(-50px) rotate(0deg) !important;
+}
+  
+#c4:hover {
+    transform: translateX(50px) rotate(0deg) !important;
+}
+  
+.main {
+    position: absolute;
+    display: grid;
+    place-items: center;
+}
+
+.main div{
+    top: -10rem;
+    left: 11rem;
+}
